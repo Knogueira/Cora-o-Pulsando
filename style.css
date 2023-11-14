@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e2afd5;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Nunito', sans-serif;
+    color:#b80071;
+
+}
+
+h2{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Nunito', sans-serif;
+    color:#6b0c47;
+}
+div {
+     text-align: center; 
+     padding: 100px;  
+}
+
+.heart {
+    position: relative;
+    transform: rotate(-45deg);
+    animation: heartbeat 1s infinite;
+  }
+
+.heart:before,
+.heart:after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background-color: #e31745;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart:before {
+  top: -50px;
+  left: 0;
+}
+
+.heart:after {
+  top: 0;
+  left: 50px;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
